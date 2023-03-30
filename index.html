@@ -8,22 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        function onNavlinkClicked(e) {
-            var elms = document.getElementsByClassName("nav-link");
-            for (i = 0; i < elms.length; i++) {
-                var elm = elms.item(i);
-                if (elm == e) {
-                    elm.classList.add('active');
-                    elm.setAttribute('aria-current', 'page');
-                } else {
-                    elm.classList.remove('active');// .addClass('active').setAttribute('aria-current', 'page');
-                    elm.removeAttribute('aria-current');
-                }
-            }
-        }
+    <script src="js/index-script.js"></script>
 
-    </script>
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
     <meta http-equiv="Expires" content="Thu, 01 Jan 1970 00:00:00 GMT" />

@@ -10,7 +10,7 @@ img {
     width: 150px;
 }
 
-.navbar {
+.nav-shadow {
     box-shadow: rgba(25, 60, 77, 0.4) 0px 10px 10px -10px;
 }
 
