@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        function onNavlinkClicked(e) {
+            var elms = document.getElementsByClassName("nav-link");
+            for (i = 0; i < elms.length; i++) {
+                var elm = elms.item(i);
+                if (elm == e) {
+                    elm.classList.add('active');
+                    elm.setAttribute('aria-current', 'page');
+                } else {
+                    elm.classList.remove('active');// .addClass('active').setAttribute('aria-current', 'page');
+                    elm.removeAttribute('aria-current');
+                }
+            }
+        }
+
+    </script>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Expires" content="Thu, 01 Jan 1970 00:00:00 GMT" />
+    <title>Hot Deals</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#top-products"
+                        onclick="onNavlinkClicked(this)">Top
+                        Products</a>
+                    <a class="nav-link" href="#laptops" onclick="onNavlinkClicked(this)">Laptops</a>
+                    <a class="nav-link" href="#smart-phones" onclick="onNavlinkClicked(this)">Smart Phones</a>
+                    <a class="nav-link" href="#all-products" onclick="onNavlinkClicked(this)">All Products</a>
+                    <a class="nav-link" href="#contacts" onclick="onNavlinkClicked(this)">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="top-products">
+        <div class="container">
+            <div id="carouselBannerSlide" class="carousel slide" data-bs-ride="carousel">
+                <div id="bottom-slider" class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselBannerSlide" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselBannerSlide" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselBannerSlide" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                        <div class="row">
+                            <div id="banner-product-desc" class="col-md text-center text-md-start align-items-center">
+                                <h4>Macbook Pro</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste optio
+                                    placeat ad debitis, aspernatur, adipisci ipsa magnam officiis voluptatum sapiente,
+                                    earum maiores aliquid?</p>
+
+                                <button type="button" class="btn btn-dark text-uppercase">Buy Now</button>
+                            </div>
+                            <div id="banner-product-img" class="col-md">
+                                <img src="assets/images/banner-products/slider1.png" alt="macbook-pro" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="row">
+                            <div id="banner-product-desc" class="col-md text-center text-md-start align-items-center">
+                                <h4>Google Home</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste optio
+                                    placeat ad debitis, aspernatur, adipisci ipsa magnam officiis voluptatum sapiente,
+                                    earum maiores aliquid?</p>
+
+                                <button type="button" class="btn btn-dark text-uppercase">Buy Now</button>
+                            </div>
+                            <div id="banner-product-img" class="col-md">
+                                <img src="assets/images/banner-products/slider2.png" alt="macbook-pro" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="row">
+                            <div id="banner-product-desc" class="col-md text-center text-md-start">
+                                <h4>JBL Soundbox</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iste optio
+                                    placeat ad debitis, aspernatur, adipisci ipsa magnam officiis voluptatum sapiente,
+                                    earum maiores aliquid?</p>
+
+                                <button type="button" class="btn btn-dark text-uppercase">Buy Now</button>
+                            </div>
+                            <div id="banner-product-img" class="col-md">
+                                <img src="assets/images/banner-products/slider3.png" alt="macbook-pro" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="laptops" class="section-margin">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3>Laptops</h3>
+                <h5 class="text-light">SEE All</h5>
+            </div>
+            <div class="row g-4">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="assets/images/laptop/product-1.png" class="card-img-top" alt="">
+                        <div class="card-body text-sm-center text-md-start">
+                            <h5 class="card-title">Asus Vivobook</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit
+                                dolorum incidunt maxime voluptates obcaecati pariatur maiores atque rerum voluptatem.
+                            </p>
+                            <h6 class="text-info">BDT 120,000</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img src="assets/images/laptop/product-2.png" class="card-img-top" alt="">
+                        <div class="card-body text-sm-center text-md-start">
+                            <h5 class="card-title">HP Pavilion</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit
+                                dolorum incidunt maxime voluptates obcaecati pariatur maiores atque rerum voluptatem.
+                            </p>
+                            <h6 class="text-info">BDT 81,000</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img src="assets/images/laptop/product-3.png" class="card-img-top" alt="">
+                        <div class="card-body text-sm-center text-md-start">
+                            <h5 class="card-title">MI Laptop</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit
+                                dolorum incidunt maxime voluptates obcaecati pariatur maiores atque rerum voluptatem.
+                            </p>
+                            <h6 class="text-info">BDT 75,000</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="smart-phones" class="section-margin">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3>Smart Phones</h3>
+                <h5 class="text-light">SEE All</h5>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="assets/images/phone/phone-1.png" class="card-img-top" alt="">
+                        <div class="card-body text-sm-center text-md-start">
+                            <h5 class="card-title">Redmi</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit
+                                dolorum incidunt maxime voluptates obcaecati pariatur maiores atque rerum voluptatem.
+                            </p>
+                            <h6 class="text-info">BDT 20,000</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img src="assets/images/phone/phone-2.png" class="card-img-top" alt="">
+                        <div class="card-body text-sm-center text-md-start">
+                            <h5 class="card-title">iPhone 11</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit
+                                dolorum incidunt maxime voluptates obcaecati pariatur maiores atque rerum voluptatem.
+                            </p>
+                            <h6 class="text-info">BDT 65,000</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img src="assets/images/phone/phone-3.png" class="card-img-top" alt="">
+                        <div class="card-body text-sm-center text-md-start">
+                            <h5 class="card-title">Samsung S20</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit
+                                dolorum incidunt maxime voluptates obcaecati pariatur maiores atque rerum voluptatem.
+                            </p>
+                            <h6 class="text-info">BDT 90,000</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="all-products" class="section-margin">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <h3>All Products</h3>
+                <span class="line-span"></span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md my-auto">
+                    <div class="card">
+                        <img id="category-img" src="assets/images/categories/bag.png" class="card-img-top p-5" alt="">
+                        <h5 class="card-title text-center mt-3">Bag</h5>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <img id="category-img" src="assets/images/categories/perfume.png" class="card-img-top p-5"
+                            alt="">
+                        <h5 class="card-title text-center mt-3">Perfumes</h5>
+                    </div>
+                    <div class="card mt-4">
+                        <img id="category-img" src="assets/images/categories/shoe.png" class="card-img-top p-5" alt="">
+                        <h5 class="card-title text-center mt-3">Shoes</h5>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <img class="img-fluid" src="assets/images/categories/pale-order.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="bg-light mt-5">
+        <div class="container">
+            <div class="py-5">
+                <h3 class="text-center">Contact Us</h3>
+                <span class="line-span"></span>
+            </div>
+            <div class="row p-3">
+                <div class="col-md">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" srcset=""></a>
+                </div>
+                <div class="col-md">
+                    <strong>Email Us</strong> <br>
+                    <span><a style="text-decoration: none; color: darkred;"
+                            href="mailto:support@hotdeals.com">support@hot-deals.com</a></span>
+                </div>
+                <div class="col-md">
+                    <strong>Call Support</strong> <br>
+                    <span><a style="text-decoration: none; color: darkred;" href="tel:+8801916095145">+880
+                            1916095145</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
